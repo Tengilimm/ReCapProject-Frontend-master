@@ -1,5 +1,5 @@
 <div id="filter-by-brand" class="d-flex align-items-center">
-  <span class="text-secondary fw-bold me-3">Brand:</span>
+  <span class="text-secondary fw-bold me-3">Marka:</span>
 
   <div class="d-none d-lg-flex">
     <button
@@ -21,7 +21,7 @@
     </button>
 
     <a class="btn me-3 rounded-2 brand-button" routerLink="/cars">
-      Explore <span class="text-primary fw-bold">{{ brands.length }}+</span>
+      Keşfet <span class="text-primary fw-bold">{{ brands.length }}+</span>
     </a>
   </div>
 
@@ -33,7 +33,7 @@
       [queryParams]="{ brand: activeBrandName }"
     >
       <!-- (change)="routeToCarsByBrand($event)" -->
-      <option [selected]="isSelected()" value="{{ undefined }}">All</option>
+      <option [selected]="isSelected()" value="{{ undefined }}">Tümü</option>
       <option
         *ngFor="let brand of brands"
         value="{{ brand.name }}"
